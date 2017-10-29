@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleCard /> should render correctly 1`] = `
+<div
+  className="article-container"
+>
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <div
+        className="votes"
+      >
+        <div>
+          <i
+            className="fa fa-arrow-up"
+            onClick={[Function]}
+          />
+        </div>
+        <div>
+          Votes: 
+          1
+        </div>
+        <div>
+          <i
+            className="fa fa-arrow-down"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="article-title is-3"
+          to="/articles/1"
+        >
+          Blue Moon
+        </NavLink>
+      </div>
+      <div>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="user-name is-4"
+          to="/users/Erick Brook"
+        >
+          Erick Brook
+        </NavLink>
+      </div>
+    </div>
+  </article>
+</div>
+`;
