@@ -1,0 +1,36 @@
+.article-container {
+    background-color: white;
+    margin-bottom:20px;
+    padding: 15px;
+    box-shadow:10px;
+
+}
+
+.article-title {
+    color: crimson;
+    font-size:30px;
+    font-weight:bold
+}
+
+.article-title:visited {
+    color: black;
+    font-weight: bold
+}
+.user-name {
+    color:black
+}
+
+.user-name:visited {
+    color:crimson
+}
+
+.votes {
+   display: inline-flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .article-title {
+        font-size: 20px
+    }
+}
