@@ -1,5 +1,5 @@
-import reducer from '../reducers/index';
-import initialState from '../reducers/articles';
+import { reducer } from '../reducers/index';
+import initialState from '../reducers/index';
 import * as types from '../actions/types'; 
 import expect from 'expect';
 
@@ -30,6 +30,31 @@ describe('reducers', ()=>{
       };
       const test = reducer(initialState, action);
       expect(test.articles.error).toEqual('This is an error message');
+    });
+  });
+  describe('fetchTopicTitles', ()=> {
+    it('should return newState.loading = true', () => {
+      const action = {
+        type: types.FETCH_TOPIC_TITLES_REQUEST,
+      };
+      const test = reducer(initialState, action);   
+      expect(test.topics.loading).toEqual(true);
+    });
+    it('returns with the requested data', ()=> {
+      const action = {
+        type: types.FETCH_TOPIC_TITLES_SUCCESS,
+        topics: ['football', 'coding','cooking'],
+      };
+      const test = reducer(initialState, action); 
+      expect(test.topics.data).toEqual(['football', 'coding','cooking']);
+    });
+    it('returns an error if passed the error action', () => {
+      const action = {
+        type: types.FETCH_TOPIC_TITLES_ERROR,
+        data: 'This is an error message'
+      };
+      const test = reducer(initialState, action);
+      expect(test.topics.error).toEqual('This is an error message');
     });
   });
 });
