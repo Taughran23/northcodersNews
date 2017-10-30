@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleList /> should render correctly 1`] = `
+exports[`<TopicPage /> should render correctly 1`] = `
 <div
   className="ArticleList"
 />
