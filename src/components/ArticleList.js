@@ -6,13 +6,12 @@ import * as actions from '../actions/articles';
 import ArticleCard from './ArticleCard';
 
 export class ArticleList extends React.Component {
-  
+
   componentDidMount () {
     this.props.fetchArticles();
   }
 
   render () {
-
     return (
       <div>
         {this.props.articles.sort(function (a,b) { return b.votes - a.votes;})
