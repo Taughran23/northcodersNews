@@ -1,15 +1,17 @@
 import {combineReducers} from 'redux';
 
 import articles from './articles';
+import topics from './topics';
 
 export const initialState = {
   loading: false,
-  error: null,
-  data: []
+  error: null, 
+  data:[]
 };
 
-const reducer = combineReducers({
-  articles
+export const reducer = combineReducers({
+  articles, topics
 });
 
 export default reducer;
+
