@@ -6,6 +6,7 @@ import '../css/bulma.css';
 
 import ArticleList from './ArticleList';
 import TopicsHeader from './TopicsHeader';
+import TopicPage from './TopicPage';
 
 const history = createBrowserHistory();
 
@@ -16,6 +17,7 @@ class App extends React.Component {
         <div>
           <TopicsHeader/>
           <Route exact path='/' component={ArticleList} />
+          <Route exact path='/:topic_slug' component={TopicPage} />
         </div>
       </Router>
     );
