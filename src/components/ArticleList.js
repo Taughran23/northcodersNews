@@ -5,6 +5,8 @@ import fetchArticles from '../actions/articles';
 import * as actions from '../actions/articles';
 import ArticleCard from './ArticleCard';
 
+import '../css/ArticleList.css';
+
 export class ArticleList extends React.Component {
 
   componentDidMount () {
@@ -13,7 +15,7 @@ export class ArticleList extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='ArticleList'>
         {this.props.articles.sort(function (a,b) { return b.votes - a.votes;})
           .map(article => 
             <ArticleCard 
