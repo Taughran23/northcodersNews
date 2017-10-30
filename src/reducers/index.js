@@ -2,6 +2,7 @@ import {combineReducers} from 'redux';
 
 import articles from './articles';
 import topics from './topics';
+import topicArticles from './topicsArticles';
 
 export const initialState = {
   loading: false,
@@ -10,7 +11,7 @@ export const initialState = {
 };
 
 export const reducer = combineReducers({
-  articles, topics
+  articles, topics, topicArticles
 });
 
 export default reducer;
