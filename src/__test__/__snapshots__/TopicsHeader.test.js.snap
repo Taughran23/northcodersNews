@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TopicsHeader /> should render correctly 1`] = `
+<div>
+  <div
+    className="nav-container"
+  >
+    <div
+      className="columns is-mobile nav-bar"
+    >
+      <div
+        className="column is-half is-one-quarter-mobile"
+      >
+        <img
+          id="logo"
+          src={Object {}}
+        />
+        <div
+          className="logo-mobile is-hidden-tablet"
+        >
+          Northcoders News
+        </div>
+      </div>
+      <NavLink
+        activeClassName="active"
+        ariaCurrent="true"
+        className="column nav-button "
+        to="/"
+      >
+        HOME
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        ariaCurrent="true"
+        className="column is-half-mobile is-hidden-tablet fa fa-bars menu-position"
+        to="/menu"
+      />
+    </div>
+  </div>
+</div>
+`;

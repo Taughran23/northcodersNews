@@ -24,6 +24,7 @@ exports[`<App /> should render correctly 1`] = `
   }
 >
   <div>
+    <Connect(TopicsHeader) />
     <Route
       component={[Function]}
       exact={true}
