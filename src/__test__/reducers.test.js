@@ -57,4 +57,29 @@ describe('reducers', ()=>{
       expect(test.topics.error).toEqual('This is an error message');
     });
   });
+  describe('fetchTopicArticles', ()=> {
+    it('should return newState.loading = true', () => {
+      const action = {
+        type: types.FETCH_TOPIC_ARTICLES_REQUEST,
+      };
+      const test = reducer(initialState, action);   
+      expect(test.topicArticles.loading).toEqual(true);
+    });
+    it('returns with the requested data', ()=> {
+      const action = {
+        type: types.FETCH_TOPIC_ARTICLES_SUCCESS,
+        topicArticles: [1, 2, 3],
+      };
+      const test = reducer(initialState, action); 
+      expect(test.topicArticles.data).toEqual([1, 2, 3]);
+    });
+    it('returns an error if passed the error action', () => {
+      const action = {
+        type: types.FETCH_TOPIC_ARTICLES_ERROR,
+        data: 'This is an error message'
+      };
+      const test = reducer(initialState, action);
+      expect(test.topicArticles.error).toEqual('This is an error message');
+    });
+  });
 });
