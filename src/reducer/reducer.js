@@ -218,5 +218,13 @@ export default function reducer(prevState = initialState, action) {
     newState.loading = false;
     return newState;
   }
+  if (action.type === types.USER_PROFILE_ERROR) {
+    const newState = Object.assign({}, prevState);
+    newState.error = action.data;
+    newState.userProfile = {};
+    // reset loading
+    newState.loading = false;
+    return newState;
+  }
   return prevState;
 }
