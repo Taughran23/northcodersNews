@@ -8,9 +8,10 @@ import TopicsHeader from './TopicsHeader';
 import TopicPage from './TopicPage';
 import UserProfile from './UserProfile';
 import Article from './Article';
+import MobileMenu from './MobileMenu';
 
 import '../css/bulma.css';
-import '../acc/App.css';
+import '../css/App.css';
 
 const history = createBrowserHistory();
 
@@ -25,6 +26,7 @@ class App extends React.Component {
           <Route exact path='/:topic_slug' component={TopicPage} />
           <Route exact path='/users/:username' component={UserProfile} />
           <Route exact path='/articles/:article_id' component={Article} />
+          <Route exact path='/menu' component={MobileMenu} />
         </div>
       </Router>
     );
