@@ -212,4 +212,57 @@ describe('reducers', ()=>{
       expect(test.error).toEqual('This is an error message');
     });
   });
+  describe('articleVote', ()=> {
+    it('should return newState.loading = true', () => {
+      const action = {
+        type: types.ARTICLE_VOTE_REQUEST,
+      };
+      const test = reducer(initialState, action);   
+      expect(test.loading).toEqual(true);
+    });
+    it('should return newState.loading = false', () => {
+      const articleId = 1;
+      const vote = 'up';
+      const action = {
+        type: types.ARTICLE_VOTE_SUCCESS,
+        articleId, 
+        vote
+      };
+      const test = reducer(initialState, action); 
+      expect(test.loading).toEqual(false);
+    });
+    it('returns an error if passed the error action', () => {
+      const action = {
+        type: types.ARTICLE_VOTE_ERROR,
+        data: 'This is an error message'
+      };
+      const test = reducer(initialState, action);
+      expect(test.error).toEqual('This is an error message');
+    });
+  });
+  describe('userProfile', ()=> {
+    it('should return newState.loading = true', () => {
+      const action = {
+        type: types.USER_PROFILE_REQUEST,
+      };
+      const test = reducer(initialState, action);   
+      expect(test.loading).toEqual(true);
+    });
+    it('returns with the requested data', ()=> {
+      const action = {
+        type: types.USER_PROFILE_SUCCESS,
+        userProfile: {userName: 'northcoder'},
+      };
+      const test = reducer(initialState, action); 
+      expect(test.userProfile).toEqual({userName: 'northcoder'});
+    });
+    it('returns an error if passed the error action', () => {
+      const action = {
+        type: types.USER_PROFILE_ERROR,
+        data: 'This is an error message'
+      };
+      const test = reducer(initialState, action);
+      expect(test.error).toEqual('This is an error message');
+    });
+  });
 });
