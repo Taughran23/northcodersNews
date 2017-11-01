@@ -1,0 +1,11 @@
+.menu {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.menu-text {
+    color:crimson
+}
