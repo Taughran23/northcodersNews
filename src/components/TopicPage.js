@@ -8,7 +8,7 @@ import ArticleCard from './ArticleCard';
 import '../css/ArticleList.css';
 
 export class TopicPage extends React.Component {
-// call the action on component did mount
+
   componentDidMount () {
     let topicSlug = this.props.match.params.topic_slug;
     this.props.fetchTopicArticles (topicSlug);
@@ -34,7 +34,6 @@ export class TopicPage extends React.Component {
     );
   }
 }
-// this is throwing up the action to redux for completion
 
 function mapDispatchToProps (dispatch) {
   return {
@@ -49,7 +48,7 @@ function mapDispatchToProps (dispatch) {
 
 function mapStateToProps (state) {
   return {
-    topicArticles: state.topicArticles.data
+    topicArticles: state.articles
   };
 }
 

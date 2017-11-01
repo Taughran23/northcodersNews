@@ -54,7 +54,7 @@ function mapDispatchToProps (dispatch) {
 
 function mapStateToProps (state) {
   return {
-    topicsTitles: state.topics.data
+    topicsTitles: state.topics
   };
 }
 
