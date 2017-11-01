@@ -35,8 +35,8 @@ export class TopicsHeader extends React.Component {
               </NavLink>
             ))}
          
-            <NavLink className='column is-half-mobile is-hidden-tablet fa fa-bars menu-position'
-              to={'/menu'}/>
+            <NavLink className='column is-half-mobile is-hidden-tablet menu-position'
+              to={'/menu'}>MENU</NavLink>
           </div>
         </div>
       </div>
