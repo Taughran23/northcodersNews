@@ -174,5 +174,49 @@ export default function reducer(prevState = initialState, action) {
     newState.loading = false;
     return newState;
   }
+  if (action.type === types.ARTICLE_VOTE_REQUEST) {
+    const newState = Object.assign({}, prevState);
+    newState.loading = true;
+    return newState;
+  }
+
+  if (action.type === types.ARTICLE_VOTE_SUCCESS) {
+    const newState = Object.assign({}, prevState);
+    const newData = newState.articles.slice();
+    newData.map((article) => {
+      if (article._id === action.articleId) {
+        if (action.vote === 'up') {
+          article.votes++;
+          return article;
+        }
+        article.votes--;
+        return article;
+      }
+      return article;
+    });
+    newState.articles = newData;
+    newState.loading = false;
+
+    return newState;
+  }
+  if (action.type === types.ARTICLE_VOTE_ERROR) {
+    const newState = Object.assign({}, prevState);
+    newState.error = action.data;
+    newState.article = {};
+    // reset loading
+    newState.loading = false;
+    return newState;
+  }
+  if (action.type === types.USER_PROFILE_REQUEST) {
+    const newState = Object.assign({}, prevState);
+    newState.loading = true;
+    return newState;
+  }
+  if (action.type === types.USER_PROFILE_SUCCESS) {
+    const newState = Object.assign({}, prevState);
+    newState.userProfile = action.userProfile;
+    newState.loading = false;
+    return newState;
+  }
   return prevState;
 }
