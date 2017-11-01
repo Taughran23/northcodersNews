@@ -28,7 +28,7 @@ export function fetchArticlesRequest() {
 export function fetchArticlesSuccess(articles) {
   return {
     type: types.FETCH_ARTICLES_SUCCESS,
-    articles: articles
+    data: articles
   };
 }
 
