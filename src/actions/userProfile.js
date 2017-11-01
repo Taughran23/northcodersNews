@@ -11,7 +11,6 @@ export default function userProfile (username) {
     dispatch(userProfileRequest());
     return axios.get(`${ROOT}/users/${username}`)
       .then((res) => {
-          console.log(res.data)
         return dispatch(userProfileSuccess(res.data));
       })
       .catch((err) => {
