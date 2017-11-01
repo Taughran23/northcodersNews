@@ -1,0 +1,33 @@
+#Article {
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px
+}
+
+.article {
+    background-color: white;
+    padding: 15px
+}
+.author {
+    margin-bottom:15px;
+    color:crimson
+}
+.comment {
+    margin-top: 40px
+}
+
+.comments-container {
+    margin-top: 50px
+}
+
+@media screen and (max-width: 768px) {
+    #Article {
+        margin-left: 0px;
+        margin-right:0px
+    }
+    .article {
+        font-size: 20px;
+        width:100%
+    }
+}

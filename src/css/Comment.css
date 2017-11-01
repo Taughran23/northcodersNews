@@ -1,0 +1,25 @@
+.comment {
+    background-color: white;
+    padding: 15px;
+    position: relative
+}
+
+.author {
+    color: crimson
+}
+
+.comment-body {
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+.vote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: flex-end;
+    margin-right:15px;
+    margin-bottom:15px;
+    margin-top:15px
+}
