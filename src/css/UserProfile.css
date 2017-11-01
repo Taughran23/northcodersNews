@@ -1,0 +1,21 @@
+.user-card {
+    background-color: white;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+    padding: 15px;
+    height: auto;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .user-card {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+}
+
+.avatar-container {
+    float: right;
+    height: auto
+}
