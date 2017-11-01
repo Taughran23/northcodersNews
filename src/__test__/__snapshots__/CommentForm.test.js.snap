@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CommentForm /> should render correctly 1`] = `
+<div
+  className="comment-form"
+>
+  <form
+    className="form"
+  >
+    <textarea
+      className="textarea"
+      placeholder="Post comment"
+    />
+    <button
+      className="button"
+      type="submit"
+      value="post"
+    >
+      Post comment
+    </button>
+  </form>
+</div>
+`;

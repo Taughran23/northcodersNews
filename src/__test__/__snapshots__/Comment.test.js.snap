@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comment /> should render correctly 1`] = `
+<section>
+  <div
+    className="comment"
+  >
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      className="author"
+      to="/users/Erick Brook"
+    >
+       
+      Erick Brook
+    </NavLink>
+    <div
+      className="comment-body"
+    >
+      Blue Moon
+    </div>
+    <div
+      className="vote"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Up
+      </button>
+      <div>
+        Votes: 
+        1
+      </div>
+      <button
+        onClick={[Function]}
+      >
+        Down
+      </button>
+    </div>
+  </div>
+</section>
+`;

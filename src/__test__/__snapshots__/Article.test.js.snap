@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article /> should render correctly 1`] = `
+<div
+  id="Article"
+>
+  <div
+    className="is-8"
+  >
+    <div
+      className="article"
+    >
+      <h1
+        className="title"
+      >
+        <b />
+      </h1>
+      <div
+        className="author"
+      >
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="subtitle author"
+          to="/users/undefined"
+        >
+           
+        </NavLink>
+      </div>
+      <p
+        className=""
+      />
+    </div>
+  </div>
+  <div
+    className="comment"
+  >
+    <CommentForm
+      input=""
+      inputHandler={[Function]}
+      submitHandler={[Function]}
+    />
+  </div>
+  <div
+    className="comments-container"
+  />
+</div>
+`;

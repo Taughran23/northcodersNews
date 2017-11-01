@@ -35,6 +35,11 @@ exports[`<App /> should render correctly 1`] = `
       exact={true}
       path="/:topic_slug"
     />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/articles/:article_id"
+    />
   </div>
 </Router>
 `;
