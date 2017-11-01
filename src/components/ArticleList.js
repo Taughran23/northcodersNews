@@ -43,7 +43,7 @@ function mapDispatchToProps (dispatch) {
 
 function mapStateToProps (state) {
   return {
-    articles: state.articles.data
+    articles: state.articles
   };
 }
 
