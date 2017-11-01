@@ -24,6 +24,7 @@ exports[`<App /> should render correctly 1`] = `
   }
 >
   <div>
+    <Header />
     <Connect(TopicsHeader) />
     <Route
       component={[Function]}
@@ -34,6 +35,11 @@ exports[`<App /> should render correctly 1`] = `
       component={[Function]}
       exact={true}
       path="/:topic_slug"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/users/:username"
     />
     <Route
       component={[Function]}

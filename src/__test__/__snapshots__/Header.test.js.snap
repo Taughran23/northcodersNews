@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly 1`] = `
+<section>
+  <div
+    className="header"
+  >
+    <img
+      src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_second.png"
+    />
+  </div>
+</section>
+`;

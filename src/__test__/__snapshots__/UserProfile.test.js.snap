@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserProfile /> should render correctly 1`] = `
+<div>
+  <section>
+    <div
+      className="user-card is-8"
+    >
+      <div>
+        <div>
+          <h1
+            className="title userName"
+          >
+            <b />
+          </h1>
+          <h6
+            className="subtitle name"
+          />
+        </div>
+        <div
+          className="avatar-container"
+        >
+          <img />
+        </div>
+      </div>
+    </div>
+    <div
+      id="ArticleList"
+    />
+  </section>
+</div>
+`;
