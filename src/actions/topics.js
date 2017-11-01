@@ -26,7 +26,7 @@ export function fetchTopicTitlesRequest () {
 export function fetchTopicTitlesSuccess (topicsTitles) {
   return {
     type: types.FETCH_TOPIC_TITLES_SUCCESS,
-    topics: topicsTitles
+    data: topicsTitles
   };
 }
 
