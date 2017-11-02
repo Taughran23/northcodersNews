@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import commentDelete from '../actions/comment';
-import { USERNAME } from '../../config';
+import { USERNAME } from '../config';
 
 import '../css/Comment.css';
 
