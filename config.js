@@ -1,5 +1,5 @@
 module.exports = {
-  ROOT: 'http://localhost:3000/api',
+  ROOT: 'https://northcoders-news-api23.herokuapp.com/api',
   USERNAME: 'northcoder'
 };
 
