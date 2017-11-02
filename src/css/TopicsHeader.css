@@ -8,13 +8,14 @@
 
 .nav-container {
     background-color:white;
-    padding-left: 75px
+    padding-left: 75px;
+    padding-right:75px
 }
 
 .nav-bar {
     background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
     height: 100px
 }
 
@@ -31,7 +32,7 @@
     float: left;
     position: relative;
     top: 50%;
-    left: 15%;
+    left: 23%;
     transform: translate(-50%, -50%);
 }
 
