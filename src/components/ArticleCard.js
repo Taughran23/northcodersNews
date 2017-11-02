@@ -11,11 +11,11 @@ export const ArticleCard = function (props) {
         <div className='media-left'>
           <div className='votes'>
             <div>
-              <i className='fa fa-arrow-up'onClick={props.articleVote.bind(null, props.id, 'up')}></i>
+              <button onClick={props.articleVote.bind(null, props.id, 'up')}>UP</button>
             </div>
             <div>Votes: {props.votes}</div>
             <div>
-              <i className='fa fa-arrow-down'onClick={props.articleVote.bind(null, props.id, 'down')}></i>
+              <button onClick={props.articleVote.bind(null, props.id, 'down')}>DOWN</button>
             </div>
           </div>
         </div>
