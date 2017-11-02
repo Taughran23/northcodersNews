@@ -3,7 +3,7 @@ import * as types from './types';
 
 import {
   ROOT
-} from '../../config';
+} from '../config';
 
 export default function articleVote (id, vote) {
   return function (dispatch) {

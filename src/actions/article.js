@@ -4,7 +4,7 @@ import * as types from './types';
 
 import {
   ROOT
-} from '../../config';
+} from '../config';
 
 export default function fetchArticle(articleID) {
   return function (dispatch) {

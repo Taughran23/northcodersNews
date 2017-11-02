@@ -4,7 +4,7 @@ import * as types from './types';
 
 import {
   ROOT
-} from '../../config';
+} from '../config';
 
 export default function fetchComments(articleID) {
   return function (dispatch) {

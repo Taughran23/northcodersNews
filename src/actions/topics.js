@@ -2,7 +2,7 @@ import * as types from './types';
 import axios from 'axios';
 import {
   ROOT
-} from '../../config';
+} from '../config';
 
 export default function fetchTopicTitles() {
   return function (dispatch) {

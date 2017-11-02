@@ -4,7 +4,7 @@ import * as types from './types';
 
 import {
   ROOT
-} from '../../config';
+} from '../config';
 
 export default function addComment(id, comment) {
   return function (dispatch) {
