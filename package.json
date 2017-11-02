@@ -8,7 +8,8 @@
     "posttest": "npm run lint",
     "precommit": "npm run lint",
     "dev": "webpack-dev-server",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "build": "react-scripts build"
   },
   "jest": {
     "moduleNameMapper": {
