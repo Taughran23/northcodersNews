@@ -32,9 +32,11 @@ exports[`<TopicsHeader /> should render correctly 1`] = `
       <NavLink
         activeClassName="active"
         ariaCurrent="true"
-        className="column is-half-mobile is-hidden-tablet fa fa-bars menu-position"
+        className="column is-half-mobile is-hidden-tablet menu-position"
         to="/menu"
-      />
+      >
+        MENU
+      </NavLink>
     </div>
   </div>
 </div>

@@ -46,6 +46,11 @@ exports[`<App /> should render correctly 1`] = `
       exact={true}
       path="/articles/:article_id"
     />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/menu"
+    />
   </div>
 </Router>
 `;

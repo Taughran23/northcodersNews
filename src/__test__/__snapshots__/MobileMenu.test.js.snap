@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MobileMenu /> should render correctly 1`] = `
+<div>
+  <div
+    className="menu menu-text"
+  >
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      className="menu-text"
+      to="/"
+    >
+      Home
+    </NavLink>
+  </div>
+</div>
+`;
