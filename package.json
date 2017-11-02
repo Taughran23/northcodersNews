@@ -13,7 +13,8 @@
     "precommit": "npm run lint",
     "dev": "webpack-dev-server",
     "lint": "eslint ./",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "start": "react-scripts start"
   },
   "jest": {
     "moduleNameMapper": {
