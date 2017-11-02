@@ -2,7 +2,7 @@ import React from 'react';
 import { connect  } from 'react-redux';
 import PropTypes from 'prop-types';
 import fetchArticles from '../actions/articles';
-import * as actions from '../actions/articles';
+import articleVote from '../actions/articleVote';
 import ArticleCard from './ArticleCard';
 
 import '../css/ArticleList.css';
@@ -36,7 +36,7 @@ function mapDispatchToProps (dispatch) {
       dispatch(fetchArticles());
     }, 
     articleVote:(id, vote) => {
-      dispatch(actions.articleVote(id, vote));
+      dispatch(articleVote(id, vote));
     }
   };
 }
