@@ -9,13 +9,10 @@
   },
   "homepage": "https://northcodernews23.herokuapp.com/",
   "scripts": {
-    "test": "jest",
-    "posttest": "npm run lint",
-    "precommit": "npm run lint",
-    "dev": "webpack-dev-server",
-    "lint": "eslint ./",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "start": "react-scripts start"
+    "test": "jest",
+    "eject": "react-scripts eject"
   },
   "jest": {
     "moduleNameMapper": {
