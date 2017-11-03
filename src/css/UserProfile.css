@@ -7,11 +7,23 @@
     height: auto;
     overflow: auto;
 }
+.ArticleList {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px
+}
+
 
 @media screen and (max-width: 1000px) {
     .user-card {
         margin-left: 0px;
         margin-right: 0px
+    }
+      .ArticleList {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+        margin-bottom: 10px
     }
 }
 
