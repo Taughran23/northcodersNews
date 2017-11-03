@@ -7,7 +7,7 @@
     "node": "7.9.0",
     "npm": "5.3.0"
   },
-  "homepage": "https://github.com/Taughran23/northcodersNews#readme",
+  "homepage": "https://northcodernews23.herokuapp.com/",
   "scripts": {
     "test": "jest",
     "posttest": "npm run lint",
