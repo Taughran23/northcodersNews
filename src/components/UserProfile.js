@@ -38,7 +38,7 @@ export class UserProfile extends React.Component {
               </div>
             </div>
           </div>
-          <div id='ArticleList'>
+          <div className='ArticleList'>
             {userArticles
               .map(article => 
                 <ArticleCard 
