@@ -14,7 +14,7 @@ export class MobileMenu extends React.Component {
     return (
       <div>
         <div className='menu menu-text'>
-          <NavLink to={'/'} className='menu-text'>Home</NavLink>
+          <NavLink to={'/'} className='menu-text'>HOME</NavLink>
         </div>
         {this.props.topicsTitles.map(topic => (
           <div className='menu' key={'topics'}>
@@ -22,7 +22,7 @@ export class MobileMenu extends React.Component {
               className='menu-text'
               to={`/${topic.slug}`} 
               key={topic._id}>
-              {topic.title}
+              {topic.title.toUpperCase()}
             </NavLink>
           </div>
         ))}

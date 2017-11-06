@@ -22,7 +22,7 @@ export class TopicsHeader extends React.Component {
 
             <div className='column is-half is-one-quarter-mobile'>
               <img id='logo' src={require('../images/ncNewsLogo.png')}/>
-              <div className='logo-mobile is-hidden-tablet'>Northcoders News</div>
+              <div className='logo-mobile column is-half-mobile is-hidden-tablet'>Northcoders News</div>
             </div>
 
             <NavLink className='column nav-button 'to={'/'}>HOME</NavLink>
@@ -34,9 +34,9 @@ export class TopicsHeader extends React.Component {
                 {topic.title.toUpperCase()}
               </NavLink>
             ))}
-         
-            <NavLink className='column is-half-mobile is-hidden-tablet menu-position'
-              to={'/menu'}>MENU</NavLink>
+            <NavLink to={'/menu'} className='column is-half-mobile is-hidden-tablet menu-position'>
+         MENU
+         </NavLink>
           </div>
         </div>
       </div>
