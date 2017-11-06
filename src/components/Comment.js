@@ -9,9 +9,6 @@ import '../css/Comment.css';
 
 
 export class Comment extends React.Component {
-  constructor (props) {
-    super(props);
-  }
   render () {
     return (
       <section>
