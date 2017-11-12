@@ -226,5 +226,18 @@ export default function reducer(prevState = initialState, action) {
     newState.loading = false;
     return newState;
   }
+  if (action.type === types.COMMENT_DELETE_REQUEST) {
+    const newState = Object.assign({}, prevState);
+    newState.loading = true;
+    return newState;
+  }
+  if (action.type === types.COMMENT_DELETE_SUCCESS) {
+    const newState = Object.assign({}, prevState);
+    const newData = newState.comments.slice()
+      .filter(comment => comment._id !== action.id);
+    newState.loading = false;
+    newState.comments = newData;  
+    return newState;
+  }
   return prevState;
 }
