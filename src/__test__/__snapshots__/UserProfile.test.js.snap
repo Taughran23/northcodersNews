@@ -25,7 +25,7 @@ exports[`<UserProfile /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      id="ArticleList"
+      className="ArticleList"
     />
   </section>
 </div>

@@ -16,7 +16,7 @@ exports[`<TopicsHeader /> should render correctly 1`] = `
           src={Object {}}
         />
         <div
-          className="logo-mobile is-hidden-tablet"
+          className="logo-mobile column is-half-mobile is-hidden-tablet"
         >
           Northcoders News
         </div>

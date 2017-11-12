@@ -14,20 +14,24 @@ exports[`<ArticleCard /> should render correctly 1`] = `
         className="votes"
       >
         <div>
-          <i
-            className="fa fa-arrow-up"
+          <button
+            className="button"
             onClick={[Function]}
-          />
+          >
+            UP
+          </button>
         </div>
         <div>
           Votes: 
           1
         </div>
         <div>
-          <i
-            className="fa fa-arrow-down"
+          <button
+            className="button"
             onClick={[Function]}
-          />
+          >
+            DOWN
+          </button>
         </div>
       </div>
     </div>
