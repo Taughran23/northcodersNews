@@ -5,7 +5,7 @@ import {
   ROOT
 } from '../config';
 
-export function commentDelete (id) {
+export default function commentDelete (id) {
   return function (dispatch) {
     dispatch(commentDeleteRequest());
     axios.delete(`${ROOT}/comments/${id}`)
