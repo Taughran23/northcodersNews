@@ -3,41 +3,65 @@
 exports[`<TopicsHeader /> should render correctly 1`] = `
 <div>
   <div
-    className="nav-container"
+    id="nav"
   >
-    <div
-      className="columns is-mobile nav-bar"
+    <nav
+      className="navbar"
     >
       <div
-        className="column is-half is-one-quarter-mobile"
+        className="container"
+        id="navcontainer"
       >
-        <img
-          id="logo"
-          src={Object {}}
-        />
         <div
-          className="logo-mobile column is-half-mobile is-hidden-tablet"
+          className="navbar-brand"
         >
-          Northcoders News
+          <div
+            className="navbar-item"
+            id="logo"
+          >
+            Northcoders News
+          </div>
+          <a
+            onClick={[Function]}
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              id="hamburger"
+              to="/menu"
+            >
+              <span
+                className="navbar-burger burger "
+                data-target="navbarMenu"
+                id="font-color-ham"
+              >
+                <span />
+                <span />
+                <span />
+              </span>
+            </NavLink>
+          </a>
+        </div>
+        <div
+          className="navbar-menu"
+          id="navbarMenu"
+        >
+          <div
+            className="navbar-end"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="navbar-item is-active"
+              id="font-color"
+              to="/"
+            >
+              HOME
+            </NavLink>
+          </div>
         </div>
       </div>
-      <NavLink
-        activeClassName="active"
-        ariaCurrent="true"
-        className="column nav-button "
-        to="/"
-      >
-        HOME
-      </NavLink>
-      <NavLink
-        activeClassName="active"
-        ariaCurrent="true"
-        className="column is-half-mobile is-hidden-tablet menu-position"
-        to="/menu"
-      >
-        MENU
-      </NavLink>
-    </div>
+    </nav>
   </div>
 </div>
 `;

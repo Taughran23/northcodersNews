@@ -11,7 +11,11 @@ exports[`<MobileMenu /> should render correctly 1`] = `
       className="menu-text"
       to="/"
     >
-      HOME
+      <span
+        onClick={[Function]}
+      >
+        HOME
+      </span>
     </NavLink>
   </div>
 </div>

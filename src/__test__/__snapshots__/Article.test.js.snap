@@ -11,12 +11,13 @@ exports[`<Article /> should render correctly 1`] = `
       className="article"
     >
       <h1
-        className="title"
+        className="title article-title"
+        id="crimson"
       >
         <b />
       </h1>
       <div
-        className="author"
+        className="article-author"
       >
         <NavLink
           activeClassName="active"
@@ -24,11 +25,11 @@ exports[`<Article /> should render correctly 1`] = `
           className="subtitle author"
           to="/users/undefined"
         >
-           
+            by 
         </NavLink>
       </div>
       <p
-        className=""
+        className="article-body"
       />
     </div>
   </div>

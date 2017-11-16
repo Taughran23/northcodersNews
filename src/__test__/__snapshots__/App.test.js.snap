@@ -51,6 +51,7 @@ exports[`<App /> should render correctly 1`] = `
       exact={true}
       path="/menu"
     />
+    <Footer />
   </div>
 </Router>
 `;

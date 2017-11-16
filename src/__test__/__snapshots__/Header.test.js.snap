@@ -6,6 +6,7 @@ exports[`<Header /> should render correctly 1`] = `
     className="header"
   >
     <img
+      alt="Northcoders"
       src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_second.png"
     />
   </div>

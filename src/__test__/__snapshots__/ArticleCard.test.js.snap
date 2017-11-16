@@ -13,25 +13,27 @@ exports[`<ArticleCard /> should render correctly 1`] = `
       <div
         className="votes"
       >
-        <div>
-          <button
-            className="button"
+        <div
+          className="vote-up"
+        >
+          <i
+            className="fa fa-chevron-up"
             onClick={[Function]}
-          >
-            UP
-          </button>
+          />
         </div>
-        <div>
-          Votes: 
+        <div
+          className="vote-tally"
+        >
+          votes  
           1
         </div>
-        <div>
-          <button
-            className="button"
+        <div
+          className="vote-down"
+        >
+          <i
+            className="fa fa-chevron-down "
             onClick={[Function]}
-          >
-            DOWN
-          </button>
+          />
         </div>
       </div>
     </div>
@@ -53,6 +55,7 @@ exports[`<ArticleCard /> should render correctly 1`] = `
           className="user-name is-4"
           to="/users/Erick Brook"
         >
+          submitted by 
           Erick Brook
         </NavLink>
       </div>

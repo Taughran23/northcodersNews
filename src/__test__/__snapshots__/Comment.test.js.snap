@@ -5,6 +5,24 @@ exports[`<Comment /> should render correctly 1`] = `
   <div
     className="comment"
   >
+    <div
+      className="vote"
+    >
+      <i
+        className="fa fa-chevron-up vote-chevron"
+        onClick={[Function]}
+      />
+      <div
+        className="vote-tally"
+      >
+        votes 
+        1
+      </div>
+      <i
+        className="fa fa-chevron-down vote-chevron"
+        onClick={[Function]}
+      />
+    </div>
     <NavLink
       activeClassName="active"
       ariaCurrent="true"
@@ -18,24 +36,6 @@ exports[`<Comment /> should render correctly 1`] = `
       className="comment-body"
     >
       Blue Moon
-    </div>
-    <div
-      className="vote"
-    >
-      <button
-        onClick={[Function]}
-      >
-        Up
-      </button>
-      <div>
-        Votes: 
-        1
-      </div>
-      <button
-        onClick={[Function]}
-      >
-        Down
-      </button>
     </div>
   </div>
 </section>

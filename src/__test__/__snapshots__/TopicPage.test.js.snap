@@ -2,6 +2,6 @@
 
 exports[`<TopicPage /> should render correctly 1`] = `
 <div
-  className="ArticleList"
+  id="ArticleList"
 />
 `;

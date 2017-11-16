@@ -20,7 +20,9 @@ exports[`<UserProfile /> should render correctly 1`] = `
         <div
           className="avatar-container"
         >
-          <img />
+          <img
+            alt="Profile"
+          />
         </div>
       </div>
     </div>
