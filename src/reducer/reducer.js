@@ -8,6 +8,7 @@ export const initialState = {
   userProfile:{},
   selectedTopic: null,
   loading: false,
+  active: false,
   error: null
 };
 
@@ -239,5 +240,17 @@ export default function reducer(prevState = initialState, action) {
     newState.comments = newData;  
     return newState;
   }
+  if (action.type === types.MOBILE_MENU_REQUEST) {
+    const newState = Object.assign({}, prevState);
+    newState.loading = true;
+    return newState;
+  }
+  if (action.type === types.MOBILE_MENU_SUCCESS) {
+    const newState = Object.assign({}, prevState);
+    newState.active = action.data;
+    newState.loading = false; 
+    return newState;
+  }
+
   return prevState;
 }
