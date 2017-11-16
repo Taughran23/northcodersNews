@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 import registerServiceWorker from './registerServiceWorker';
 import reducer from './reducer/reducer';
 import App from './components/App';
+import './css/bulma.css';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
