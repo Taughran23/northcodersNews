@@ -3,6 +3,7 @@
     margin-bottom:20px;
     padding: 15px;
     box-shadow:10px;
+    margin-top: 20px
 
 }
 
@@ -24,13 +25,30 @@
     color:crimson
 }
 
-.votes {
-   display: inline-flex;
-  align-items: flex-end;
-}
-
 @media screen and (max-width: 768px) {
     .article-title {
         font-size: 20px
     }
+}
+
+.button {
+    color: white;
+    background-color: black;
+}
+
+.vote-up {
+ position:relative;
+ margin:0;
+ left: 30%;
+ bottom: 70%
+}
+.vote-down {
+ position:relative;
+ margin:0;
+ left: 30%;
+ top: 70%
+}
+
+.vote-tally {
+    position: center
 }

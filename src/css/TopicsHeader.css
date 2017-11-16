@@ -1,106 +1,36 @@
-.nav-button {
-    color: crimson;
-    font-family:helvetica;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
-.nav-container {
-    background-color:white;
-    padding-left: 75px;
-    padding-right:75px
-}
-
-.nav-bar {
-    background-color: white;
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 100px
-}
-
-.menu-position {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
+#font-color:hover {
     color:crimson
 }
 
+#font-color {
+    color: black
+}
+
+#font-color-ham:hover {
+    color:crimson
+}
+
+#font-color-ham {
+    color: black
+}
+
 #logo {
-    height: 90%;
-    width: auto;
-    float: left;
-    position: relative;
-    top: 50%;
-    left: 23%;
-    transform: translate(-50%, -50%);
-}
-
-.logo-mobile {
     font-family: garamond;
-    font-weight: bold;
-    float: left;
-    position: relative;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
+    font-size: 150%;
+    font-weight:bold;
+    color: black;
+    margin-right:10px
 }
 
-@media screen and (max-width: 480px) {
-    .nav-bar {
-        background-color: white;
-        margin-left: 0px;
-        height: 70px
-    }
-    ;
-    .nav-container {
-        height: 70px
-    }
-    ;
-    
+#hamburger {
+    position: absolute;
+    right:0;
 }
 
-@media screen and (max-width: 768px) {
-    #logo {
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
+@media screen and (min-width:1000px) {
+    #navcontainer {
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: 5px;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .nav-button {
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
-    }
-}
-
-@media screen and (min-width:601px) {
-    .modal {
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .nav-container {
-        height: 80px;
-        margin-left: 0px
-    }
-    .nav-bar {
-        margin-left: 0px;
-        height: 80px
-    }
-    #logo {
-    height: 90%;
-    width: auto;
-    float: left;
-    position: relative;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-}
-}
-

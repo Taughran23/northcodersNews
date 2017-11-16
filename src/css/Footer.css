@@ -1,0 +1,17 @@
+.Footer {
+    background-color: crimson;
+    color: white;
+    font-family: garamond;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#icon {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: 10px;
+    color:white
+}

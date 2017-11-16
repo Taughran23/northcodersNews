@@ -1,11 +1,11 @@
-.ArticleList {
+#ArticleList {
     margin-left: 75px;
     margin-right: 75px;
     margin-top: 50px
 }
 
 @media screen and (max-width:1000px) {
-    .ArticleList {
+    #ArticleList {
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 5px;

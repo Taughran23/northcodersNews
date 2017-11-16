@@ -1,11 +1,13 @@
 .menu {
-    background-color: white;
-    text-align: center;
+    background-color: crimson;
+    text-align: left;
     vertical-align: middle;
-    line-height: 70px;
+    line-height: 100px;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right:10px
+    margin-right:10px;
+    padding-left: 20px;
+    margin-top: 10px
 }
 
 .menu-top {
@@ -13,7 +15,42 @@
 }
 
 .menu-text {
-    color:crimson;
+    color:white;
     font-size:medium;
-    
+}
+
+.football {
+    background-color: white;
+    color:crimson;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-left: 4px
+}
+
+.coding {
+    background-color:white;
+    color:crimson;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-left: 4px
+}
+
+.cooking {
+   background-color: black;
+    color: crimson;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-left: 4px
 }

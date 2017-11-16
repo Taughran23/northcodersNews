@@ -1,7 +1,7 @@
 .comment {
     background-color: white;
     padding: 15px;
-    position: relative
+    position: relative;
 }
 
 .author {
@@ -9,17 +9,37 @@
 }
 
 .comment-body {
+    position: relative;
     margin-top: 5px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    margin-right: 120px
 }
 
 .vote {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    display: inline-flex;
-    align-items: flex-end;
-    margin-right:15px;
-    margin-bottom:15px;
-    margin-top:15px
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    border-left: whitesmoke
+}
+
+.vote-chevron {
+    position: relative;
+    margin: 0;
+    left: 30%;
+    bottom: 70%
+}
+
+#delete-button {
+    background-color: crimson;
+    color: white
+}
+
+@media screen and (max-width:450px) {
+    .comment-body {
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-right: 80px
+    }
 }
