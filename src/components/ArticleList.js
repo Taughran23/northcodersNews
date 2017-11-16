@@ -15,7 +15,7 @@ export class ArticleList extends React.Component {
 
   render () {
     return (
-      <div className='ArticleList'>
+      <div id='ArticleList'>
         {this.props.articles.sort(function (a,b) { return b.votes - a.votes;})
           .map(article => 
             <ArticleCard 
@@ -24,6 +24,7 @@ export class ArticleList extends React.Component {
               votes={article.votes} 
               id={article._id}
               key={article.title} 
+              comments={article.comments}
               user={article.created_by}/>)}
       </div>
     );

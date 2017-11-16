@@ -13,6 +13,7 @@ const CommentForm = (props) => (
         onChange={props.inputHandler}
       />
       <button
+        id='post-button'
         className="button"
         type="submit"
         value="post"

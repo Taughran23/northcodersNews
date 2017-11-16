@@ -5,39 +5,64 @@ import PropTypes from 'prop-types';
 
 
 import fetchTopicTitles from '../actions/topics';
+import mobileMenu from '../actions/mobileMenu';
+
 import '../css/TopicsHeader.css';
 
 
+
 export class TopicsHeader extends React.Component {
+  constructor (props) {
+    super(props);
+    this.toggleHandler = this.toggleHandler.bind(this);
+  }
   componentDidMount () {
     this.props.fetchTopicTitles();
   }
-
+  toggleHandler () {
+    this.props.mobileMenu(this.props.active);
+  }
   render () {
     return (
       <div>
-  
-        <div className='nav-container'>
-          <div className='columns is-mobile nav-bar'>
-
-            <div className='column is-half is-one-quarter-mobile'>
-              <img id='logo' src={require('../images/ncNewsLogo.png')}/>
-              <div className='logo-mobile column is-half-mobile is-hidden-tablet'>Northcoders News</div>
+        <div id='nav'> 
+          <nav className="navbar">
+            <div className="container" id='navcontainer'>
+              <div className="navbar-brand">
+                <div className="navbar-item"  id='logo'>
+                  Northcoders News
+                </div> 
+                <a onClick={this.toggleHandler}>
+                  <NavLink  to={this.props.active ? '/' : '/menu'} id='hamburger'>
+                    <span
+                      className={this.props.active ? 'navbar-burger burger is-active ' : 'navbar-burger burger '  } 
+                      id='font-color-ham'
+                      data-target="navbarMenu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </NavLink>
+                </a>
+              </div>
+              <div id="navbarMenu" className="navbar-menu">
+                <div className="navbar-end">
+                  <NavLink to={'/'} id='font-color'className="navbar-item is-active">
+                    HOME
+                  </NavLink>
+                  {this.props.topicsTitles.map(topic => (
+                    <NavLink 
+                      id='font-color'
+                      className='navbar-item'
+                      to={`/${topic.slug}`} 
+                      key={topic.slug}>
+                      {topic.title.toUpperCase()}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
             </div>
-
-            <NavLink className='column nav-button 'to={'/'}>HOME</NavLink>
-            {this.props.topicsTitles.map(topic => (
-              <NavLink 
-                className='column nav-button'
-                to={`/${topic.slug}`} 
-                key={topic._id}>
-                {topic.title.toUpperCase()}
-              </NavLink>
-            ))}
-            <NavLink to={'/menu'} className='column is-half-mobile is-hidden-tablet menu-position'>
-         MENU
-         </NavLink>
-          </div>
+          </nav>
         </div>
       </div>
     );
@@ -48,20 +73,26 @@ function mapDispatchToProps (dispatch) {
   return {
     fetchTopicTitles: () => {
       dispatch(fetchTopicTitles());
+    },
+    mobileMenu: (bool) => {
+      dispatch(mobileMenu(bool));
     }
   };
 }
 
 function mapStateToProps (state) {
   return {
-    topicsTitles: state.topics
+    topicsTitles: state.topics,
+    active: state.active
   };
 }
 
 
 TopicsHeader.propTypes = {
   topicsTitles: PropTypes.array.isRequired, 
-  fetchTopicTitles: PropTypes.func.isRequired
+  fetchTopicTitles: PropTypes.func.isRequired,
+  mobileMenu: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TopicsHeader);

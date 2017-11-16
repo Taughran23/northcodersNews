@@ -10,12 +10,12 @@ export const ArticleCard = function (props) {
       <article className='media'>
         <div className='media-left'>
           <div className='votes'>
-            <div>
-              <button onClick={props.articleVote.bind(null, props.id, 'up')}>UP</button>
+            <div className='vote-up'>
+              <i className='fa fa-chevron-up'onClick={props.articleVote.bind(null, props.id, 'up')}/>
             </div>
-            <div>Votes: {props.votes}</div>
-            <div>
-              <button onClick={props.articleVote.bind(null, props.id, 'down')}>DOWN</button>
+            <div className='vote-tally'>votes  {props.votes}</div>
+            <div className='vote-down'>
+              <i className='fa fa-chevron-down 'onClick={props.articleVote.bind(null, props.id, 'down')}/>
             </div>
           </div>
         </div>
@@ -25,7 +25,9 @@ export const ArticleCard = function (props) {
             <NavLink to={`/articles/${props.id}`} className='article-title is-3'>{props.title}</NavLink>
           </div>
           <div>
-            <NavLink to={`/users/${props.user}`} className='user-name is-4'>{props.user}</NavLink>
+            <NavLink to={`/users/${props.user}`} className='user-name is-4'>
+              submitted by {props.user}
+            </NavLink>
           </div>
         </div>
       </article>

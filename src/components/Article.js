@@ -45,11 +45,11 @@ export class Article extends React.Component {
       <div id='Article'>
         <div className="is-8">
           <div className="article">
-            <h1 className="title"><b>{this.props.article.title}</b></h1>
-            <div className='author'>
-              <NavLink to={`/users/${this.props.article.created_by}`}className="subtitle author"> {this.props.article.created_by}</NavLink>
+            <h1  id='crimson'className="title article-title"><b>{this.props.article.title}</b></h1>
+            <div className='article-author'>
+              <NavLink to={`/users/${this.props.article.created_by}`}className="subtitle author">  by {this.props.article.created_by}</NavLink>
             </div>
-            <p className="">{this.props.article.body}</p>
+            <p className="article-body">{this.props.article.body}</p>
           </div>
         </div>
         <div className='comment'>

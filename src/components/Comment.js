@@ -13,16 +13,16 @@ export class Comment extends React.Component {
     return (
       <section>
         <div className='comment'>
+          <div className='vote'>
+            <i className='fa fa-chevron-up vote-chevron'onClick={this.props.commentVote.bind(null, this.props.id, 'up', this.props.comments.data)}/>
+            <div className='vote-tally'>votes {this.props.votes}</div>
+            <i className='fa fa-chevron-down vote-chevron'onClick={this.props.commentVote.bind(null, this.props.id, 'down',this.props.comments.data)}/>
+          </div>
           <NavLink className='author' to={`/users/${this.props.author}`}> {this.props.author}</NavLink>
           <div className='comment-body'>{this.props.body}</div>
-          <div className='vote'>
-            <button onClick={this.props.commentVote.bind(null, this.props.id, 'up', this.props.comments.data)}>Up</button>
-            <div>Votes: {this.props.votes}</div>
-            <button onClick={this.props.commentVote.bind(null, this.props.id, 'down',this.props.comments.data)}>Down</button>
-          </div>
           {(function (props) {
             if (USERNAME === props.author) {
-              return <button onClick={props.commentDelete.bind(null, props.id)}>
+              return <button id='delete-button'className='button is-small'onClick={props.commentDelete.bind(null, props.id)}>
                           Delete Comment
               </button>;
             }

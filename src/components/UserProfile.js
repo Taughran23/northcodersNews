@@ -20,9 +20,7 @@ export class UserProfile extends React.Component {
   render () {
     const userArticles = this.props.articles
       .filter((article) => {
-        if (article.created_by === this.props.user.username) {
-          return article;
-        }
+        return article.created_by === this.props.user.username;
       });
     return (
       <div>
@@ -34,7 +32,7 @@ export class UserProfile extends React.Component {
                 <h6 className="subtitle name">{this.props.user.name}</h6>
               </div>
               <div className='avatar-container'>
-                <img src={this.props.user.avatar_url}/>
+                <img src={this.props.user.avatar_url} alt='Profile'/>
               </div>
             </div>
           </div>

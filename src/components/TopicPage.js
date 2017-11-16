@@ -21,14 +21,15 @@ export class TopicPage extends React.Component {
 
   render () {
     return (
-      <div className='ArticleList'>{
-        this.props.topicArticles.sort(function (a,b) { return b.votes - a.votes;}).
-          map(article => 
+      <div id='ArticleList'>{
+        this.props.topicArticles.sort(function (a,b) { return b.votes - a.votes;})
+          .map(article => 
             <ArticleCard articleVote={this.props.articleVote}
               title={article.title} 
               votes={article.votes} 
               id={article._id} 
               key={article._id} 
+              comments={article.comments}
               user={article.created_by}/>)}
       </div>
     );

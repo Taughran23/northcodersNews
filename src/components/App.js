@@ -9,13 +9,19 @@ import TopicPage from './TopicPage';
 import UserProfile from './UserProfile';
 import Article from './Article';
 import MobileMenu from './MobileMenu';
+import Footer from './Footer';
 
-import '../css/bulma.css';
 import '../css/App.css';
 
 const history = createBrowserHistory();
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active : false
+    };
+  }
   render () {
     return (
       <Router history={history}>
@@ -27,6 +33,7 @@ class App extends React.Component {
           <Route exact path='/users/:username' component={UserProfile} />
           <Route exact path='/articles/:article_id' component={Article} />
           <Route exact path='/menu' component={MobileMenu} />
+          <Footer />
         </div>
       </Router>
     );
