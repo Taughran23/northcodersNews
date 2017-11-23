@@ -10,19 +10,23 @@
 .article-title {
     color: crimson;
     font-size:30px;
-    font-weight:bold
+    font-weight:bold;
+    font-family: 'Merriweather Sans', serif;
 }
 
 .article-title:visited {
     color: black;
-    font-weight: bold
+    font-weight: bold;
+    font-family: 'Merriweather Sans', serif;
 }
 .user-name {
-    color:black
+    color:black;
+    font-family: 'Merriweather', serif;
 }
 
 .user-name:visited {
-    color:crimson
+    color:crimson;
+    font-family: 'Merriweather', serif;
 }
 
 @media screen and (max-width: 768px) {
