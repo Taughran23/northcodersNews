@@ -13,6 +13,10 @@
     margin-top: 50px
 }
 
+#author-name {
+    padding-top: 10px;
+}
+
 
 @media screen and (max-width: 1000px) {
     .user-card {

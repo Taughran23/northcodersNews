@@ -28,8 +28,8 @@ export class UserProfile extends React.Component {
           <div className="user-card is-8">
             <div>
               <div>
-                <h1 className="title userName"><b>{this.props.user.username}</b></h1>
-                <h6 className="subtitle name">{this.props.user.name}</h6>
+                <h1 className="title"><b>{this.props.user.username}</b></h1>
+                <h6 className="subtitle name" id="author-name">{this.props.user.name}</h6>
               </div>
               <div className='avatar-container'>
                 <img src={this.props.user.avatar_url} alt='Profile'/>

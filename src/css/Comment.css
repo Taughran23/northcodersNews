@@ -5,14 +5,16 @@
 }
 
 .author {
-    color: crimson
+    color: crimson;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .comment-body {
     position: relative;
     margin-top: 5px;
     margin-bottom: 15px;
-    margin-right: 120px
+    margin-right: 120px;
+    font-family: 'Merriweather', sans-serif;
 }
 
 .vote {
